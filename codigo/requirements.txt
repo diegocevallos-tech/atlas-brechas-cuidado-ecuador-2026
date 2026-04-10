@@ -1,0 +1,10 @@
+# Dependencias del proyecto Atlas Brechas de Cuidado — DAT4CCIÓN 2026
+# Instalar con: pip install -r requirements.txt
+pandas>=2.0
+geopandas>=0.14
+folium>=0.15
+matplotlib>=3.8
+numpy>=1.26
+streamlit>=1.30
+plotly>=5.18
+openpyxl>=3.1

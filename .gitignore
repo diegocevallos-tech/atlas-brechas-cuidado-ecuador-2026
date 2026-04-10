@@ -1,0 +1,6 @@
+*.gpkg
+*.xlsx
+__pycache__/
+*.pyc
+.env
+*.zip
