@@ -10,3 +10,4 @@ Pipeline Python completo y reproducible para el calculo del IBTC y generacion de
 | requirements.txt | Dependencias Python |
 
 Para ejecutar: pip install -r requirements.txt && python 01_pipeline_ibtc.py
+<!-- entrega -->

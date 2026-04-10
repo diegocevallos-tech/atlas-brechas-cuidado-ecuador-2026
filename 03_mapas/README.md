@@ -16,3 +16,4 @@ Serie de 5 mapas estaticos PNG 300 dpi y mapa interactivo HTML.
 
 atlas_brechas_interactivo_final.html — Abrir en navegador. No requiere instalacion.
 Tooltip por canton: nombre, provincia, IBTC, tipologia, D1, D2, D3.
+<!-- entrega -->

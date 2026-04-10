@@ -11,3 +11,4 @@ Dataset maestro IBTC con los 221 cantones de Ecuador.
 
 Los archivos GeoPackage (.gpkg) no estan en este repositorio por tamano.
 Ver geopaquetes/README_GEOPAQUETES.md para el enlace de descarga.
+<!-- entrega -->

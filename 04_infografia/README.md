@@ -9,3 +9,4 @@ Infografia A3 del Atlas Territorial de Brechas de Cuidado.
 
 Incluye: cifras clave, mapa tipologia, categorias IBTC, formula,
 bloque problema-solucion y recomendaciones de politica publica.
+<!-- entrega -->
