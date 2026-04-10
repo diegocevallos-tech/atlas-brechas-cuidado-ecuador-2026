@@ -1,4 +1,5 @@
 *.gpkg
+*.gdb
 __pycache__/
 *.pyc
 .env
