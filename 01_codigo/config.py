@@ -88,3 +88,39 @@ SUBTITULO       = "Modelo de priorización cantonal para políticas de igualdad 
 EVENTO          = "DAT4CCIÓN 2026 — ONU Mujeres"
 FUENTE_DATOS    = "INEC Censo 2022 | MIES SIIMIES Q4 2024 | CNRH 2023 | IGM Ecuador"
 FECHA_DATOS     = "2022-2024"
+
+
+# ==============================================================================
+# SECCIÓN 2 — Estructura REAL del repositorio y generación de mapas (v2)
+# Los bloques anteriores corresponden al pipeline de especificación original
+# (01_pipeline_ibtc.py) y NO reproducen el dataset publicado; ver 01_codigo/README.md.
+# ==============================================================================
+RUTA_DATOS        = ROOT / "02_datos"
+RUTA_GEO          = RUTA_DATOS / "geo"
+RUTA_SALIDA_MAPAS = ROOT / "03_mapas" / "estaticos"
+
+# Clave de unión: código DPA de cantón como TEXTO de 4 caracteres (con cero inicial).
+CSV_DATASET         = RUTA_DATOS / "ibtc_cantones_final.csv"
+GEOJSON_CANTONES    = RUTA_GEO / "cantones_ecuador_221.geojson"
+TABLA_DPA_OFICIAL   = RUTA_DATOS / "dpa_cantones_oficial.csv"
+COL_CSV_CODIGO      = "CANTON"       # en el CSV viene sin cero inicial en algunos códigos
+COL_GEO_CODIGO      = "cod_dpa"      # propiedad del GeoJSON
+LARGO_CODIGO_DPA    = 4
+PROVINCIA_INSULAR   = "GALAPAGOS"    # se dibuja en recuadro aparte
+
+# Colores de la tipología en los mapas (coinciden con el mapa interactivo)
+PALETA_TIPOLOGIA_MAPAS = {
+    "Crítico":            "#D73027",
+    "Vulnerable":         "#FDAE61",
+    "En Transición":      "#FEE090",
+    "Cobertura Relativa": "#74ADD1",
+}
+COLOR_SIN_DATO     = "#D3D3D3"
+COLOR_ACENTO       = "#E5007D"
+COLOR_TEXTO        = "#1A1A2E"
+COLOR_TEXTO_SUAVE  = "#4A4A6A"
+COLOR_FONDO_MAPA   = "#EFF4F9"
+FORMATOS_MAPA      = ("png", "pdf")
+DPI_MAPA           = 300
+TAMANO_MAPA_PULG   = (15.56, 16.52)
+LONGITUD_ESCALA_KM = 200

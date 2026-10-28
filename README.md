@@ -66,7 +66,7 @@ Carpeta: `05_informe/`
   conclusiones, uso de IA y fuentes.
 
 ### 📖 Documentación técnica
-Carpeta: `06_docs/`
+Carpeta: `06_metodologia/`
 
 - `Metodologia_IBTC_DAT4CCION2026.docx` — Metodología detallada
   con 10 secciones: objetivo, fuentes, dimensiones, fórmula,
@@ -89,7 +89,8 @@ Carpeta: `01_codigo/`
 |---------|-------------|
 | `config.py` | **Todos los parámetros editables centralizados** |
 | `01_pipeline_ibtc.py` | ETL + cálculo IBTC completo |
-| `02_generar_mapas.py` | Generación de mapas estáticos e interactivos |
+| `02_generar_mapas.py` | Genera los 5 mapas estáticos desde `02_datos/` (unión por código DPA); reproducible sin datos crudos |
+| `utilidades/` | Scripts de corrección de nombres por código DPA (XLSX/CSV y mapa interactivo) |
 | `requirements.txt` | Dependencias Python |
 
 ---
@@ -109,7 +110,7 @@ pip install -r 01_codigo/requirements.txt
 # 4. Ejecutar pipeline
 python 01_codigo/01_pipeline_ibtc.py
 
-# 5. Generar mapas
+# 5. Generar mapas (solo requiere los datos incluidos en 02_datos/)
 python 01_codigo/02_generar_mapas.py
 ```
 
@@ -131,7 +132,7 @@ python 01_codigo/02_generar_mapas.py
 2. **D3 proxy NBI** — CNRH 2023 sin desagregación cantonal
 3. **Escala cantonal** — brechas intracantonales no visibles
 
-Ver documentación completa en `06_docs/Metodologia_IBTC_DAT4CCION2026.docx`
+Ver documentación completa en `06_metodologia/Metodologia_IBTC_DAT4CCION2026.docx`
 
 ---
 
