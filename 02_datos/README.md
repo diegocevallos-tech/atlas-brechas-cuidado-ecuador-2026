@@ -6,7 +6,7 @@ Dataset maestro IBTC con los 221 cantones de Ecuador. **Clave de unión: código
 |---------|-------------|
 | ibtc_cantones_final.csv | Dataset maestro 221 cantones: código DPA, nombre, provincia, D1-D3, IBTC, tipología y variables censales |
 | IBTC_Dataset_Maestro_DAT4CCION2026.xlsx | Excel con 4 hojas: datos, resumen tipología, top 20, GeoPackages |
-| dpa_cantones_oficial.csv | Tabla DPA (código-cantón-provincia) usada para validar nombres. La Concordia figura como 2302 (Censo 2022). **Validar contra INEC/CONALI antes de citar.** |
+| dpa_cantones_oficial.csv | Tabla DPA (código-cantón-provincia) usada para validar nombres. La tabla es una capa en línea de 2012: trae La Concordia como 0808 (Esmeraldas) y el Maestro la usa como 2302 (Santo Domingo de los Tsáchilas, vigente desde 2013); 2302 pendiente de confirmar con CONALI/INEC. **Validar contra INEC/CONALI antes de citar.** |
 | reporte_correccion_nombres_dpa.csv | Una fila por cantón: nombre publicado antes de la corrección vs nombre corregido |
 | geo/cantones_ecuador_221.geojson | Geometría cantonal con `cod_dpa` |
 | DICCIONARIO_BDD_CANTON.md | Diccionario de variables Censo 2022 |
